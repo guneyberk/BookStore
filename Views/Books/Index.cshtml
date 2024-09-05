@@ -1,0 +1,27 @@
+@Model IEnumerable<BookStoreApp.Models.Book>
+
+<h2>Books</h2>
+<a href="/Books/Create">Add New Book</a>
+
+<table class="Table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Price</th>
+            <th>Publish Date</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach(var book in Model){
+            <tr>
+                <td>@book.Title</td>
+                <td>@book.Author</td>
+                <td>@book.Price</td>
+                <td></td>
+            </tr>
+        }
+    </tbody>
+</table>
