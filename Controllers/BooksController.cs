@@ -53,6 +53,9 @@ namespace BookStoreApp.Controllers{
         }
 
         private bool BookExists(int id){
+
+
+            
             return _bookContext.Books.Any(e => e.Id == id);
         }
     }
